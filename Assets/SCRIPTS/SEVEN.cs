@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class SEVEN : MonoBehaviour
 {
-    //VARIABLE DECLARATION
+    //VARIABLE DECLARATION 
     public string kindOfOperation;
     public float X;
     public float Y;
 
     void Start()
-    {
+    {               //depending on the type of operation a different function is called
         if (kindOfOperation == "sum")
         {
             float result = sum(X, Y);
@@ -30,6 +30,7 @@ public class SEVEN : MonoBehaviour
         }
     }
 
+    //here I've defined the functions will be called depending on the kind of operation
     private float sum(float X, float Y)
     {
         float result = X + Y;
