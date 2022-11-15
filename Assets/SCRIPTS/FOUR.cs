@@ -4,15 +4,24 @@ using UnityEngine;
 
 public class FOUR : MonoBehaviour
 {
-    // Start is called before the first frame update
+    // VARIABLE DECLARATION
+    public float Base;
+    public float Height;
+    private float BH;
+    private float result;
+
     void Start()
     {
-        
-    }
+        BH = Base * Height;
+        result = BH / 2;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        if (Base > 0 && Height > 0)
+        {
+            Debug.Log($"The area of the triangle witch base is {Base} and height {Height} is {result}.");
+        }
+        else
+        {
+            Debug.Log($"The area cannot be calculated.");
+        }
     }
 }

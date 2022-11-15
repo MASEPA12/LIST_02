@@ -5,14 +5,15 @@ using UnityEngine;
 public class ONE : MonoBehaviour
 {
     // VARIABLE DECLARATION
-    public float number;
+    [SerializeField] private int number;
+
     void Start()
     {
-        if(number > 1)
+        if (number > 1)
         {
             Debug.Log($"The number {number} is positive.");
-
-        }else if(number == 0)
+        }
+        else if (number == 0)
         {
             Debug.Log($"The number is 0.");
         }
