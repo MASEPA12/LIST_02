@@ -17,14 +17,19 @@ public class TEN : MonoBehaviour
         result3 = year % 400; //year/400
         
         
-        if (result1 == 0) //if it's divisible entre 4
+        if (result1 == 0) //if it's divisible by 4
         {
             Debug.Log($"The year {year} is a leap year.");
-            if (result2 == 0) //es divisible entre 100
+
+            if (result2 == 0) //is divisible by 100
             {
-                if(result3 == 0) //es divisible entre 400
+                if(result3 == 0) //is divisible by 400?
                 {
                     Debug.Log($"The year {year} is a leap year.");
+                }
+                else
+                {
+                    Debug.Log($"The year {year} is not a leap year.");
                 }
             }
         }
